@@ -1,0 +1,53 @@
+/* .box {
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    position: fixed;
+    top: 0;
+    left: 0;
+    animation: andando linear infinite 1s;
+}
+
+@keyframes andando{
+    0%{
+    left: 0;
+    }
+    25%{
+        left: calc(100% -100px);
+        0
+    }
+    50%{
+        left: calc(100% - 100px);
+        top: calc(100% - 100px);
+    }
+    75%{
+        left: 0;
+        top: calc(100% - );
+    }
+} */
+
+body{
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading{
+    display: flex;
+    gap: 6px;
+    & .barrinha{
+        width: 12px;
+        height: 50px;
+        background-color: black;
+        animation: fadeOut linear infinite 1s;
+    }
+}
+@keyframes fadeOut {
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
