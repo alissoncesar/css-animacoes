@@ -41,8 +41,9 @@ body{
         height: 50px;
         background-color: black;
         animation: fadeOut linear infinite 1s;
+        animation-delay: var(--tempo);
     }
-    .barrinha:nth-child(1){
+    /* .barrinha:nth-child(1){
         animation-delay: 0s;
     }
     .barrinha:nth-child(2){
@@ -50,7 +51,7 @@ body{
     }
     .barrinha:nth-child(3){
         animation-delay: 0.4s;
-    }
+    } */
 }
 @keyframes fadeOut {
     from{
